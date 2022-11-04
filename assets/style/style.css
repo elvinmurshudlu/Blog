@@ -257,6 +257,7 @@ footer .logos i {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    justify-self: center;
   }
   .profile--header__details p {
     text-align: center;
@@ -272,6 +273,7 @@ footer .logos i {
     justify-content: center;
     align-items: center;
     width: 300px;
+    justify-self: center;
   }
   .profile--posts {
     width: 450px;

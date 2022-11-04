@@ -302,6 +302,7 @@ footer{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
+                justify-self: center;
                 
                 
                 p{
@@ -319,6 +320,7 @@ footer{
                 justify-content: center;
                 align-items: center;
                 width: 300px;
+                justify-self: center;
             }
         }
         &--posts{
