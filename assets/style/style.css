@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.active {
+  color: orange;
+}
+
+a {
+  color: black;
+}
+
+header .nav {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 90px;
+}
+header .nav .menu {
+  display: none;
+}
+header .nav ul {
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+}
+header .nav ul li {
+  cursor: pointer;
+}
+header .nav ul ::-moz-selection {
+  background: white;
+}
+header .nav ul ::selection {
+  background: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+main .informations {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+main .informations--header {
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+main .informations .information {
+  display: flex;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+main .informations .information--image img {
+  border-radius: 5px;
+}
+main .informations .information--details {
+  width: 350px;
+  height: 180px;
+  padding-left: 10px;
+}
+main .informations .information--details h1 {
+  margin-bottom: 15px;
+}
+main .informations .information--details h5 {
+  font-size: 17px;
+  margin-top: 20px;
+}
+main .informations .information--details_year {
+  padding: 2px 10px;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  margin-right: 17px;
+}
+main .informations .work--details .work--detail {
+  margin-top: 30px;
+}
+main .informations .work--details .work--detail__header {
+  width: 500px;
+}
+main .informations .work--details .work--detail--year {
+  background-color: orange;
+  display: inline-block;
+  margin-top: 10px;
+}
+main .informations .work--details .work--detail p {
+  width: 700px;
+  font-size: 15px;
+  margin-top: 15px;
+}
+main .informations .work--details .work--detail img {
+  width: 800px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+footer .logos {
+  margin-bottom: 10px;
+}
+footer .logos i {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.hr_header {
+  text-align: center;
+  opacity: 0.4;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+.profile--header {
+  width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.profile--header__details h1 {
+  margin-bottom: 25px;
+  width: 500px;
+  font-size: 44px;
+}
+.profile--header__details p {
+  font-size: 16px;
+}
+.profile--header__details input {
+  margin-top: 30px;
+  background-color: orange;
+  border-radius: 2px;
+  color: white;
+  border: 0px;
+  font-size: 20px;
+  padding: 3px 10px;
+}
+.profile--header__picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile--header__picture img {
+  border-radius: 100%;
+}
+.profile--posts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #edf7fa;
+}
+.profile--posts .cards {
+  width: 900px;
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  flex-wrap: wrap;
+}
+.profile--posts .cards .card {
+  margin: 10px 0;
+  border-radius: 2px;
+  padding: 25px;
+  background-color: white;
+}
+.profile--posts .cards .card h2 {
+  width: 330px;
+  margin-bottom: 23px;
+}
+.profile--posts .cards .card p {
+  width: 300px;
+  margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+  header .nav {
+    padding-right: 20px;
+  }
+  header .nav ul {
+    display: none !important;
+  }
+  header .nav .menu {
+    display: block;
+  }
+  main .informations {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+  }
+  main .informations .information {
+    width: 400px;
+  }
+  main .informations .information--image img {
+    width: 330px;
+  }
+  main .informations .information--details {
+    width: 350px;
+  }
+  main .informations .work--details .work--detail p {
+    width: 350px;
+    margin-bottom: 10px;
+  }
+  main .informations .work--details .work--detail img {
+    width: 350px;
+  }
+  .profile {
+    width: 100%;
+    margin-top: 0;
+  }
+  .profile--header {
+    align-items: center;
+    justify-self: center;
+    width: 350px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .profile--header__details {
+    grid-row: 2/3;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .profile--header__details p {
+    text-align: center;
+    width: 300px;
+  }
+  .profile--header__details h1 {
+    text-align: center;
+    width: 300px;
+    font-size: 20px;
+  }
+  .profile--header__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+  .profile--posts .cards {
+    width: 500px;
+  }
+}/*# sourceMappingURL=style.css.map */
