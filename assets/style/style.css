@@ -24,6 +24,28 @@ header .nav {
 }
 header .nav .menu {
   display: none;
+  position: absolute;
+}
+header .nav .menu input {
+  opacity: 0;
+}
+header .nav .menu input:checked ~ .res_menu {
+  display: block;
+}
+header .nav .menu .res_menu {
+  position: absolute;
+  right: 0;
+  display: none;
+  top: 30px;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border: 1px solid black;
+}
+header .nav .menu .res_menu--ul {
+  display: block !important;
+  line-height: 40px;
+  padding: 10px 10px;
 }
 header .nav ul {
   display: flex;
@@ -225,8 +247,7 @@ footer .logos i {
   }
   .profile--header {
     align-items: center;
-    justify-self: center;
-    width: 350px;
+    width: 450px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
@@ -251,6 +272,10 @@ footer .logos i {
     justify-content: center;
     align-items: center;
     width: 300px;
+  }
+  .profile--posts {
+    width: 450px;
+    padding-left: 50px;
   }
   .profile--posts .cards {
     width: 500px;
